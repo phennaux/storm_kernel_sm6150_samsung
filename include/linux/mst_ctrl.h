@@ -1,5 +1,7 @@
 /*
- * Copyright (c) 2021, The Linux Foundation. All rights reserved.
+ * @file mst_ctrl.h
+ * @brief MST stop control node
+ * Copyright (c) 2015, Samsung Electronics Corporation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -11,10 +13,11 @@
  * GNU General Public License for more details.
  */
 
-#ifndef __LINUX_PINCTRL_MSM_H__
-#define __LINUX_PINCTRL_MSM_H__
+#ifndef _LINUX_MST_CTRL_H
+#define _LINUX_MST_CTRL_H
 
-/* API to write to mpm_wakeup registers */
-int msm_gpio_mpm_wake_set(unsigned int gpio, bool enable);
+#include <linux/types.h>
 
-#endif /* __LINUX_PINCTRL_MSM_H__ */
+extern const struct file_operations mst_ctrl_fops;
+
+#endif /* _LINUX_MST_CTRL_H */
