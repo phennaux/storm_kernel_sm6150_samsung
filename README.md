@@ -1,0 +1,1 @@
+# storm_kernel_sm6150_samsung
